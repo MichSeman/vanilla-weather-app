@@ -5,16 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Vanilla Weather App</title>
 </head>
 <body>
     <div class="container">
-        <h1>
-            Hello World
-        </h1>
-        <a href="" class="btn btn-info">I'm a button</a>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Enter a city..."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-info w-80"
+                />
+              </div>
+            </div>
+          </form>
+                    <div class="overview">
+            <h1 id="city">Rome</h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+            <div class="d-flex weather-temperature">
+            <img src="" alt="Clear" id="icon" />
+            <div>
+                <strong id="temperature"></strong
+                ><span class="units"> °C</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+         <small>
+          <a
+            href="https://github.com/MichSeman/vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Michelle Seman
+        </small>
+        </div>
     </div>
   
     <script src="src/app.js"></script>

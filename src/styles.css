@@ -1,3 +1,12 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+
+}
 h1 {
     color: palevioletred;
+} 
+/* 50px is the margin top */
+.weather-app {
+    max-width: 600px;
+    margin: 50px auto;
 }
