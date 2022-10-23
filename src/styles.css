@@ -5,19 +5,11 @@ body {
 h1 {
     color: palevioletred;
     font-size: 24px;
-    font-weight: 50;
+    font-weight: 200;
     height: 27px;
     line-height: 28px;
     margin-bottom: 0;
  
-} 
-/* 50px is the margin top from top of page */
-.weather-app {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border:1px solid palevioletred;
-    border-radius: 10px;
 } 
 ul {
     margin: 0;
@@ -34,7 +26,38 @@ li {
     line-height: 19px;
     
 }
+/* # plus the name of li id targets that id */
+#update {
+     margin-top: 20px;
+}
 
-.icons {
-    size: x-small;
+.weather-app-wrapper {
+    max-width: 600px;
+    margin: 40px auto;
+}
+/* 50px is the margin top from top of page */
+.weather-app {
+    padding: 20px;
+    border:1px solid palevioletred;
+    border-radius: 10px;
+} 
+
+.weather-temperature strong {
+    color:goldenrod;
+    font-size: 45px;
+    font-weight: 200;
+    line-height: 1;
+}
+
+.weather-temperature .units {
+    position: relative;
+    font-size: 16px;
+    top: -22px; 
+}
+.weather-temperature img {
+    margin-right: 5px;
+}
+
+.overview {
+    margin-bottom: 20px;
 }
