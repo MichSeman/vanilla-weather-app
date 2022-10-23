@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +38,7 @@
             </div>
           </form>
             <div class="overview">
-                <h1 id="city">Rome</h1>
+                <h1 id="city"></h1>
                 <ul>
                 <li id="update">Last updated: <span id="date"></span></li>
                 <li id="description"></li>
@@ -49,14 +50,13 @@
             <div class="d-flex weather-temperature">
             <img src="icons/noun-rain-3397763.png" alt="Rain" id="icon" />
             <div>
-                <strong id="temperature">10</strong
+                <strong id="temperature"></strong
                 ><span class="units"> °C</span>
             </div>
             </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Percipitation: <span id="percipitation">%</span></li>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span> m/h</li>
               </ul>

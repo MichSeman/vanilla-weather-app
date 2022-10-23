@@ -9,6 +9,7 @@ h1 {
     height: 27px;
     line-height: 28px;
     margin-bottom: 0;
+    text-transform: uppercase;
  
 } 
 ul {
@@ -24,11 +25,13 @@ li {
     font-size: 16px;
     height: 18px;
     line-height: 19px;
+    text-transform: capitalize;
     
 }
 /* # plus the name of li id targets that id */
 #update {
      margin-top: 20px;
+ 
 }
 
 .weather-app-wrapper {
