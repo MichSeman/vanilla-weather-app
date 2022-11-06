@@ -19,8 +19,13 @@ function formatDate(timestamp) {
         "Saturday"
     ];
     let day = days[date.getDay()];
-
     return `${day}, ${hours}:${minutes}`;
+}
+
+function displayForecast() {
+    let forecastELement = document.querySelector("#forecast");
+
+    forecastELement.innerHTML = "Forecast";
 }
 
 function displayTemperature(response) {
@@ -47,6 +52,7 @@ function search(city) {
     let apiKey = "11e35b685db379570807b7fb5ef18ce6";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature); 
+    
 }
 
 function handleSubmit(event) {
@@ -91,3 +97,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Rome");
+displayForecast();
